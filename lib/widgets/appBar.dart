@@ -1,4 +1,7 @@
+import 'package:appstore_clone/style/colors.dart';
+import 'package:appstore_clone/style/text.dart';
 import 'package:flutter/material.dart';
+
 
 class AppBarTitle extends StatelessWidget {
   final String title;
@@ -10,6 +13,24 @@ class AppBarTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // ignore: unnecessary_null_comparison
+        if(subtiitle != null) Text(subtiitle, style: TextStyles.smallBoldText.apply(color: ColorStyles.primaryLightColor)),
+        Container(
+          margin: const EdgeInsets.only(top: 8.0),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(title, style: TextStyles.titleText),
+              // ignore: unnecessary_null_comparison
+              if(profileImage != null) const Card()
+            ],
+          ),
+        )
+      ],
+    );
   }
 }
