@@ -23,7 +23,11 @@ class _ViewPageState extends State<ViewPage> {
                 children: [
                   Container(
                     padding: const EdgeInsets.fromLTRB(20, 56, 20, 0),
-                    child: AppBarTitle(),
+                    child: const AppBarTitle(
+                      'Today',
+                      subtiitle: 'SATURDAY 26 MARCH',
+                      profileImage: 'https://img.sbs.co.kr/newsnet/etv/upload/2018/09/12/30000612826_1280.jpg',
+                    )
                   )
                 ],
               )
