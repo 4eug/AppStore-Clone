@@ -1,3 +1,4 @@
+import 'package:appstore_clone/widgets/appBar.dart';
 import 'package:flutter/material.dart';
 
 class ViewPage extends StatefulWidget {
@@ -22,7 +23,7 @@ class _ViewPageState extends State<ViewPage> {
                 children: [
                   Container(
                     padding: const EdgeInsets.fromLTRB(20, 56, 20, 0),
-                    child: ,
+                    child: AppBarTitle(),
                   )
                 ],
               )
