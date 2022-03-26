@@ -28,6 +28,10 @@ class _ViewPageState extends State<ViewPage> {
                       subtiitle: 'SATURDAY 26 MARCH',
                       profileImage: 'https://img.sbs.co.kr/newsnet/etv/upload/2018/09/12/30000612826_1280.jpg',
                     )
+                  ),
+                  Container(
+                    padding: const EdgeInsets.only(right: 20, left: 20, top: 8),
+                    
                   )
                 ],
               )

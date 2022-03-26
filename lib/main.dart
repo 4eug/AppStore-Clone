@@ -1,4 +1,5 @@
 import 'package:appstore_clone/page/viewpage.dart';
+import 'package:appstore_clone/style/colors.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'AppStore Clone',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: ColorStyles.primaryDarkColor,
       ),
       home: const MainPage(),
     );
