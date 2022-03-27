@@ -1,15 +1,16 @@
 import 'package:appstore_clone/style/colors.dart';
 import 'package:appstore_clone/style/text.dart';
+import 'package:appstore_clone/widgets/imageViews/cachedProfile.dart';
 import 'package:flutter/material.dart';
 
 
 class AppBarTitle extends StatelessWidget {
   final String title;
   final String subtiitle;
-  final String profileImage;
+  final String profileUrl;
 
   // ignore: use_key_in_widget_constructors
-  const AppBarTitle(this.title, {this.subtiitle = "", required this.profileImage});
+  const AppBarTitle(this.title, {this.subtiitle = "", required this.profileUrl});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,7 @@ class AppBarTitle extends StatelessWidget {
             children: [
               Text(title, style: TextStyles.titleText),
               // ignore: unnecessary_null_comparison
-              if(profileImage != null) const Card()
+              if(profileUrl != null)  CachedProfile(profileUrl)
             ],
           ),
         )
