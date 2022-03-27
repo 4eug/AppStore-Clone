@@ -5,7 +5,6 @@ import 'package:appstore_clone/style/colors.dart';
 import 'package:appstore_clone/style/text.dart';
 import 'package:appstore_clone/widgets/imageViews/cachedImage.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:palette_generator/palette_generator.dart';
 

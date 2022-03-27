@@ -32,7 +32,7 @@ class MainPage extends StatelessWidget {
       backgroundColor: ColorStyles.primaryDarkColor,
       bottomNavigationBar:DecoratedBox(
         decoration: const BoxDecoration(
-          color: Colors.purple),
+          color: Colors.black),
           child: Padding(
             padding: const EdgeInsets.fromLTRB(1, 5, 1, 5),
             child: SafeArea(
@@ -42,31 +42,31 @@ class MainPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   IconButton(
-                    icon: const Icon(Icons.home),
+                    icon: const Icon(Icons.today),
                     color: Colors.white,
                     iconSize: 30,
                     onPressed: (){},
                     ),
                 IconButton(
-                  icon: const Icon(CupertinoIcons.search),
+                  icon: const Icon(CupertinoIcons.gamecontroller_alt_fill),
                   color: Colors.white,
                   iconSize: 30,
                   onPressed: () {},
                 ),
                 IconButton(
-                  icon: const Icon(CupertinoIcons.bell),
+                  icon: const Icon(CupertinoIcons.app_badge),
                   color: Colors.white,
                   iconSize: 30,
                   onPressed: () {},
                 ),
                 IconButton(
-                  icon: const Icon(CupertinoIcons.person),
+                  icon: const Icon(CupertinoIcons.gamecontroller),
                   color: Colors.white,
                   iconSize: 30,
                   onPressed: () {},
                 ),
                  IconButton(
-                  icon: const Icon(CupertinoIcons.person),
+                  icon: const Icon(CupertinoIcons.search),
                   color: Colors.white,
                   iconSize: 30,
                   onPressed: () {},
