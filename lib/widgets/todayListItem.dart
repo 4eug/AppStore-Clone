@@ -10,7 +10,7 @@ class TodayListItem extends StatelessWidget {
   final Today item;
 
   // ignore: use_key_in_widget_constructors
-  const TodayListItem(this.item);
+  const TodayListItem(this.item,);
 
   @override
   // ignore: missing_return
