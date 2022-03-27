@@ -1,4 +1,5 @@
 import 'package:appstore_clone/widgets/appBar.dart';
+import 'package:appstore_clone/widgets/todayListView.dart';
 import 'package:flutter/material.dart';
 
 class ViewPage extends StatefulWidget {
@@ -33,7 +34,7 @@ class _ViewPageState extends State<ViewPage> {
                   ),
                   Container(
                     padding: const EdgeInsets.only(right: 20, left: 20, top: 8),
-                    
+                    child: const TodayListView(),
                   )
                 ],
               )

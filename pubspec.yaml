@@ -31,6 +31,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  palette_generator: ^0.3.3
   shimmer: ^2.0.0
 
 dev_dependencies:

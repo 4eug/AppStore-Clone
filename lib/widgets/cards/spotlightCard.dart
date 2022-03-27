@@ -79,7 +79,7 @@ class _AppInfoWidgetState extends State<AppInfoWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 84,
       child: ClipRect(
         child: Stack(

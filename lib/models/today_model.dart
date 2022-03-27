@@ -29,8 +29,9 @@ class SpotlightToday extends Today{
   final String imageUrl;
   final String title;
   final AppInfo appInfo;
+  final String description;
 
-  const SpotlightToday(this.imageUrl, this.title, this.appInfo) : super(title, Today.SPOTLIGHT);
+  const SpotlightToday(this.imageUrl, this.title, this.appInfo, {this.description}) : super(title, Today.SPOTLIGHT);
 }
 
 class ArticleToday extends Today{
