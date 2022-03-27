@@ -1,4 +1,5 @@
-import 'app_model.dart';
+
+import 'package:appstore_clone/models/app_model.dart';
 
 class Today {
   final String id;
@@ -12,35 +13,31 @@ class Today {
   // ignore: constant_identifier_names
   static const int ARTICLE = 2;
 
-  const Today(this.title, this.type, this.id);
+  const Today(this.title, this.type, {this.id});
 }
 
-class PlainToday extends Today {
+class PlainToday extends Today{
   final String imageUrl;
   final String title;
   final String category;
   final String description;
 
-  const PlainToday(this.imageUrl, this.title, this.category, this.description)
-      :  super('', 0, '');
+  const PlainToday(this.imageUrl, this.title, this.category, {this.description}) : super(title, Today.PLAIN);
 }
 
-class SpotlightToday extends Today {
+class SpotlightToday extends Today{
   final String imageUrl;
   final String title;
   final AppInfo appInfo;
 
-  const SpotlightToday(this.imageUrl, this.title, this.appInfo) : super('', 0, '')
-      ;
+  const SpotlightToday(this.imageUrl, this.title, this.appInfo) : super(title, Today.SPOTLIGHT);
 }
 
-class ArticleToday extends Today {
+class ArticleToday extends Today{
   final String imageUrl;
   final String title;
   final String subTitle;
   final String accentText;
 
-  const ArticleToday(this.imageUrl,
-      {this.title, this.subTitle, this.accentText})
-      : super('', 0, '');
+  const ArticleToday(this.imageUrl, {this.title, this.subTitle, this.accentText}) : super(title, Today.ARTICLE);
 }
