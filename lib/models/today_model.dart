@@ -28,6 +28,7 @@ class PlainToday extends Today{
 class SpotlightToday extends Today{
   final String imageUrl;
   final String title;
+  
   final AppInfo appInfo;
   final String description;
 

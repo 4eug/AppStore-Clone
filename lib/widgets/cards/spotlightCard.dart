@@ -19,7 +19,7 @@ class SpotlightCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: double.infinity,
       height: 420,
       child: Container(
@@ -27,6 +27,7 @@ class SpotlightCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(16.0),
             child: Stack(
               children: [
+                
                 CachedImage(item.imageUrl),
                 Align(
                   alignment: Alignment.bottomLeft,
@@ -35,9 +36,10 @@ class SpotlightCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                          margin: const EdgeInsets.fromLTRB(20, 0, 0, 20),
-                          child:
-                              Text(item.title, style: TextStyles.accentText)),
+                          margin: const EdgeInsets.fromLTRB(20, 0, 0, 280),
+                          child:   Text(item.title, style: TextStyles.mediumHeavyText.apply(color: Colors.white)),
+                              ),
+                      
                       AppInfoWidget(item)
                     ],
                   ),
@@ -80,7 +82,7 @@ class _AppInfoWidgetState extends State<AppInfoWidget> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 84,
+      height: 74,
       child: ClipRect(
         child: Stack(
           children: [
@@ -133,7 +135,7 @@ class _AppInfoWidgetState extends State<AppInfoWidget> {
                     height: 26,
                     width: 66,
                     color: Colors.white,
-                    child: Center(child: Text('받기', style: TextStyles.buttonExtraBoldText.apply(color: ColorStyles.accentColor),)),
+                    child: Center(child: Text('GET', style: TextStyles.buttonExtraBoldText.apply(color: ColorStyles.accentColor),)),
                   ),
                 ),
               ),
@@ -151,5 +153,33 @@ class _AppInfoWidgetState extends State<AppInfoWidget> {
     setState(() {
       backColor = paletteGenerator.dominantColor.color;
     });
+  }
+}
+
+class _CardTitle extends StatelessWidget {
+  const _CardTitle({
+     Key key,
+    this.item,
+  }) : super(key: key);
+
+  final PlainToday item;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        // ignore: unnecessary_null_comparison
+        if (item.category != null)
+          Text(item.category,
+              style: TextStyles.smallBoldText
+                  .apply(color: Colors.white.withOpacity(0.8))),
+        Padding(
+          padding: const EdgeInsets.only(top: 16.0),
+          child: Text(item.title,
+              style: TextStyles.mediumHeavyText.apply(color: Colors.white)),
+        ),
+      ],
+    );
   }
 }
