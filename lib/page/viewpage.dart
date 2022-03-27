@@ -22,7 +22,7 @@ class _ViewPageState extends State<ViewPage> {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Container(
-                    padding: const EdgeInsets.fromLTRB(20, 56, 20, 0),
+                    padding: const EdgeInsets.fromLTRB(20, 36, 20, 0),
                     child: const AppBarTitle(
                       'Today',
                       subtiitle: 'SATURDAY 26 MARCH',

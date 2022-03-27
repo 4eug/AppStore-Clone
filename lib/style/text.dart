@@ -15,8 +15,8 @@ class TextStyles {
 
   static const TextStyle titleText = TextStyle(
       fontFamily: _appleGothicExtraBold,
-      fontSize: 36,
-      color: Colors.black,
+      fontSize: 38,
+      color: Colors.white,
       height: 1.1);
 
   static const TextStyle mediumHeavyText = TextStyle(
@@ -27,9 +27,9 @@ class TextStyles {
 
   static const TextStyle smallBoldText = TextStyle(
       fontFamily: _appleGothicBold,
-      fontSize: 16,
-      color: Colors.black,
-      height: 1.1);
+      fontSize: 13,
+      color: Colors.white,
+      height: 1.0);
 
   static const TextStyle smallLightText = TextStyle(
       fontFamily: _appleGothicLight,
