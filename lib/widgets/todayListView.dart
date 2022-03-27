@@ -27,7 +27,7 @@ class TodayListState extends State<TodayListView> {
         'https://images.unsplash.com/photo-1592651595884-957a8f9c1d52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
         'Mid-Night',
         'Photograhy',
-        description: '집에만 있을 거에요?'),
+        description: 'Snap Beautiful Pictures'),
     const SpotlightToday(
         'https://ayo.news/wp-content/uploads/2020/05/Fortnite-1.jpg',
         'Fortnite',
