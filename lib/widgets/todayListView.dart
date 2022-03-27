@@ -19,11 +19,10 @@ class TodayListState extends State<TodayListView> {
     const SpotlightToday(
         'https://lh3.googleusercontent.com/gsbOVolF0SetvVXYh8rSSDjW5pFwx4F40dg20Hhj6617fI6W-q5aXwZxIMbR2cYJmgYRZV8z8Egzz4-quVZc3WZdH3pL7bScl5LNj1sqmtJNWD3xQbzRDkj0V5SZdPFA68XX7qsO',
         '오늘의\n게임',
-        
         AppInfo(
             'https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/7c/d7/66/7cd766cf-c775-08e1-49ae-2d5611376450/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png',
             'Hot Lava',
-            'gjdhghjgsh')),
+            '용암과 함께하는 환상적 모험')),
     const PlainToday(
         'https://images.unsplash.com/photo-1592651595884-957a8f9c1d52?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
         '엣지있는 생활',
@@ -41,7 +40,7 @@ class TodayListState extends State<TodayListView> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-        physics: const NeverScrollableScrollPhysics(),
+        physics: NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         padding: const EdgeInsets.only(top: 8, bottom: 16),
         itemCount: _todays.length,
