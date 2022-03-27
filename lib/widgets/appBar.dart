@@ -10,7 +10,7 @@ class AppBarTitle extends StatelessWidget {
   final String profileUrl;
 
   // ignore: use_key_in_widget_constructors
-  const AppBarTitle(this.title, {this.subtiitle = "", required this.profileUrl});
+  const AppBarTitle(this.title, {this.subtiitle = "",  this.profileUrl});
 
   @override
   Widget build(BuildContext context) {

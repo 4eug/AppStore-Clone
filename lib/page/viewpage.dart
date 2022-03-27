@@ -2,7 +2,9 @@ import 'package:appstore_clone/widgets/appBar.dart';
 import 'package:flutter/material.dart';
 
 class ViewPage extends StatefulWidget {
-  const ViewPage({ Key? key }) : super(key: key);
+  const ViewPage({Key key}) : super(key: key);
+
+  
 
   @override
   State<ViewPage> createState() => _ViewPageState();
@@ -26,7 +28,7 @@ class _ViewPageState extends State<ViewPage> {
                     child: const AppBarTitle(
                       'Today',
                       subtiitle: 'SATURDAY 26 MARCH',
-                      profileUrl: 'https://img.sbs.co.kr/newsnet/etv/upload/2018/09/12/30000612826_1280.jpg',
+                      profileUrl: 'https://avatars.githubusercontent.com/u/41149530?s=400&u=7b02351473a06635910449fc4bf9cbcbc16c9662&v=4',
                     )
                   ),
                   Container(

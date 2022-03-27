@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
 class CachedImage extends StatelessWidget {
-  const CachedImage(this.url, {Key? key}) : super(key: key);
+  const CachedImage(this.url, {Key key}) : super(key: key);
   final String url;
 
   @override

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
 class CachedProfile extends StatelessWidget {
-  const CachedProfile(this.url, {Key? key}) : super(key: key);
+  const CachedProfile(this.url, {Key key}) : super(key: key);
   final String url;
 
   @override
