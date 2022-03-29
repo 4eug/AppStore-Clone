@@ -43,7 +43,7 @@ class MainPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   IconButton(
-                    icon: const Icon(Icons.today),
+                    icon: const FaIcon(FontAwesomeIcons.fileLines),
                     color: Colors.white,
                     iconSize: 30,
                     onPressed: (){},
