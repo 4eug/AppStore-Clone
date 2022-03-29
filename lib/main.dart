@@ -55,19 +55,19 @@ class MainPage extends StatelessWidget {
                   onPressed: () {},
                 ),
                 IconButton(
-                  icon: const Icon(CupertinoIcons.app_badge),
+                  icon: const FaIcon(FontAwesomeIcons.layerGroup),
                   color: Colors.white,
                   iconSize: 30,
                   onPressed: () {},
                 ),
                 IconButton(
-                  icon: const Icon(CupertinoIcons.gamecontroller),
+                  icon: const FaIcon(FontAwesomeIcons.gamepad),
                   color: Colors.white,
                   iconSize: 30,
                   onPressed: () {},
                 ),
                  IconButton(
-                  icon: const FaIcon(FontAwesomeIcons.search),
+                  icon: const FaIcon(FontAwesomeIcons.magnifyingGlass),
                   color: Colors.white,
                   iconSize: 30,
                   onPressed: () {},
