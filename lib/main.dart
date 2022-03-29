@@ -2,6 +2,7 @@ import 'package:appstore_clone/page/viewpage.dart';
 import 'package:appstore_clone/style/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -48,7 +49,7 @@ class MainPage extends StatelessWidget {
                     onPressed: (){},
                     ),
                 IconButton(
-                  icon: const Icon(CupertinoIcons.gamecontroller_alt_fill),
+                  icon: const FaIcon(FontAwesomeIcons.rocket),
                   color: Colors.white,
                   iconSize: 30,
                   onPressed: () {},
@@ -66,7 +67,7 @@ class MainPage extends StatelessWidget {
                   onPressed: () {},
                 ),
                  IconButton(
-                  icon: const Icon(CupertinoIcons.search),
+                  icon: const FaIcon(FontAwesomeIcons.search),
                   color: Colors.white,
                   iconSize: 30,
                   onPressed: () {},
