@@ -25,7 +25,7 @@ class AppBarTitle extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(title, style: TextStyles.titleText),
+              Text(title, style: TextStyles.titleText.apply(color: ColorStyles.primaryDarkColor)),
               // ignore: unnecessary_null_comparison
               if(profileUrl != null)  CachedProfile(profileUrl)
             ],

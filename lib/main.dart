@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'AppStore Clone',
       theme: ThemeData(
-        primaryColor: ColorStyles.primaryDarkColor,
+        primaryColor: ColorStyles.primaryColor,
       ),
       home: const MainPage(),
     );
@@ -30,7 +30,7 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      backgroundColor: ColorStyles.primaryDarkColor,
+      backgroundColor: ColorStyles.primaryColor,
       bottomNavigationBar:BottomNavigationBar(
         backgroundColor: Colors.white.withOpacity(0.1),
           type: BottomNavigationBarType.fixed,
@@ -41,11 +41,11 @@ class MainPage extends StatelessWidget {
                 child: FaIcon(
                   FontAwesomeIcons.fileLines,
                   size: 30,
-                  color: Colors.white,
+                  color: Colors.blue,
                 ),
               ),
               // ignore: deprecated_member_use
-              title: Text('Today', style: TextStyle(color: Colors.white),),
+              title: Text('Today', style: TextStyle(color: Colors.blue),),
             ),
             BottomNavigationBarItem(
               icon: Padding(
