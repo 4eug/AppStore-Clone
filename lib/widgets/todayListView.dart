@@ -17,8 +17,8 @@ class TodayListState extends State<TodayListView> {
   //test data
   final List<Today> _todays = <Today>[
     const SpotlightToday(
-        'https://lh3.googleusercontent.com/gsbOVolF0SetvVXYh8rSSDjW5pFwx4F40dg20Hhj6617fI6W-q5aXwZxIMbR2cYJmgYRZV8z8Egzz4-quVZc3WZdH3pL7bScl5LNj1sqmtJNWD3xQbzRDkj0V5SZdPFA68XX7qsO',
-        'Mad Hot \nLava',
+        'https://1.bp.blogspot.com/-cDdD9sU3hAE/YZGVJ2WyazI/AAAAAAAAJdU/621nryslGXEvAP6oKPtYh2EcLb5OqAYiwCLcBGAsYHQ/w360-h640/PUBG%2BMobile%2BZombies%2Biphone%2BWallpaper1080.jpg',
+        'PUBG \nMOBILE',
         AppInfo(
             'https://sportsnews.page/wp-content/uploads/2021/04/pubg-512x416.png',
             'PUBG MOBILE',
