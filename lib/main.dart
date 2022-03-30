@@ -77,7 +77,7 @@ class MainPage extends StatelessWidget {
                 child: FaIcon(FontAwesomeIcons.gamepad, size: 30.0, color: Colors.white),
               ),
               // ignore: deprecated_member_use
-              title: Text('Today', style: TextStyle(color: Colors.white),),
+              title: Text('Arcade', style: TextStyle(color: Colors.white),),
             ),
            BottomNavigationBarItem(
               icon: Padding(
