@@ -1,4 +1,3 @@
-
 import 'package:appstore_clone/models/app_model.dart';
 
 class Today {
@@ -16,30 +15,37 @@ class Today {
   const Today(this.title, this.type, {this.id});
 }
 
-class PlainToday extends Today{
+class PlainToday extends Today {
   final String imageUrl;
   final String title;
   final String category;
   final String description;
+  final String subdescription;
 
-  const PlainToday(this.imageUrl, this.title, this.category, {this.description}) : super(title, Today.PLAIN);
+  const PlainToday(this.imageUrl, this.title, this.category, {this.description, this.subdescription})
+      : super(title, Today.PLAIN);
 }
 
-class SpotlightToday extends Today{
+class SpotlightToday extends Today {
   final String imageUrl;
   final String title;
-  
+
   final AppInfo appInfo;
   final String description;
+  final String subdescription;
 
-  const SpotlightToday(this.imageUrl, this.title, this.appInfo, {this.description}) : super(title, Today.SPOTLIGHT);
+  const SpotlightToday(this.imageUrl, this.title, this.appInfo,
+      {this.description, this.subdescription})
+      : super(title, Today.SPOTLIGHT);
 }
 
-class ArticleToday extends Today{
+class ArticleToday extends Today {
   final String imageUrl;
   final String title;
   final String subTitle;
   final String accentText;
 
-  const ArticleToday(this.imageUrl, {this.title, this.subTitle, this.accentText}) : super(title, Today.ARTICLE);
+  const ArticleToday(this.imageUrl,
+      {this.title, this.subTitle, this.accentText})
+      : super(title, Today.ARTICLE);
 }
