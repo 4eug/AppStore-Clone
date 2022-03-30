@@ -118,6 +118,9 @@ class _AppInfoWidgetState extends State<AppInfoWidget> {
                       Text(
                         widget.item.appInfo.description,
                         style: TextStyles.descriptionLightText.apply(color: Colors.white),
+                      ),Text(
+                        widget.item.appInfo.subdescription,
+                        style: TextStyles.descriptionLightText.apply(color: Colors.white),
                       )
                     ],
                   ),
@@ -155,30 +158,3 @@ class _AppInfoWidgetState extends State<AppInfoWidget> {
   }
 }
 
-class _CardTitle extends StatelessWidget {
-  const _CardTitle({
-     Key key,
-    this.item,
-  }) : super(key: key);
-
-  final PlainToday item;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        // ignore: unnecessary_null_comparison
-        if (item.category != null)
-          Text(item.category,
-              style: TextStyles.smallBoldText
-                  .apply(color: Colors.white.withOpacity(0.8))),
-        Padding(
-          padding: const EdgeInsets.only(top: 16.0),
-          child: Text(item.title,
-              style: TextStyles.mediumHeavyText.apply(color: Colors.white)),
-        ),
-      ],
-    );
-  }
-}
