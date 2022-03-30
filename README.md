@@ -2,6 +2,9 @@
 
 A quick Flutter Clone, Ui Design By Me
 
+Couldnt get some of the icons so represented them with 
+different icons
+
 ## Screenshots
 
 <table>
