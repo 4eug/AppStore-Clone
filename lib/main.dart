@@ -36,29 +36,11 @@ class MainPage extends StatelessWidget {
           type: BottomNavigationBarType.fixed,
           items: [
             BottomNavigationBarItem(
-              icon: FaIcon(
-                FontAwesomeIcons.fileLines,
-                size: 30,
-                color: Colors.white,
-              ),
-              // ignore: deprecated_member_use
-              title: Text('Today', style: TextStyle(color: Colors.white),),
-            ),
-            BottomNavigationBarItem(
-              icon: FaIcon(
-                FontAwesomeIcons.search,
-                size: 25.0,
-                color: Colors.white,
-              ),
-              // ignore: deprecated_member_use
-              title: Text('Today', style: TextStyle(color: Colors.white),),
-            ),
-            BottomNavigationBarItem(
               icon: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20.0),
-                child: Icon(
-                  Icons.movie_creation_outlined,
-                  size: 30.0,
+                padding: const EdgeInsets.all(8.0),
+                child: FaIcon(
+                  FontAwesomeIcons.fileLines,
+                  size: 30,
                   color: Colors.white,
                 ),
               ),
@@ -66,14 +48,44 @@ class MainPage extends StatelessWidget {
               title: Text('Today', style: TextStyle(color: Colors.white),),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.shop, size: 30.0, color: Colors.white),
+              icon: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: FaIcon(
+                  FontAwesomeIcons.rocket,
+                  size: 30,
+                  color: Colors.white,
+                ),
+              ),
+              // ignore: deprecated_member_use
+              title: Text('Games', style: TextStyle(color: Colors.white),),
+            ),
+            BottomNavigationBarItem(
+              icon: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: FaIcon(
+                  FontAwesomeIcons.layerGroup,
+                  size: 30,
+                  color: Colors.white,
+                ),
+              ),
+              // ignore: deprecated_member_use
+              title: Text('Apps', style: TextStyle(color: Colors.white),),
+            ),
+            BottomNavigationBarItem(
+              icon: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: FaIcon(FontAwesomeIcons.gamepad, size: 30.0, color: Colors.white),
+              ),
               // ignore: deprecated_member_use
               title: Text('Today', style: TextStyle(color: Colors.white),),
             ),
            BottomNavigationBarItem(
-              icon: Icon(Icons.shop, size: 30.0, color: Colors.white),
+              icon: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: FaIcon(FontAwesomeIcons.magnifyingGlass, size: 30.0, color: Colors.white),
+              ),
               // ignore: deprecated_member_use
-              title: Text('Today', style: TextStyle(color: Colors.white),),
+              title: Text('Search', style: TextStyle(color: Colors.white),),
             ),
           ],
         ),
