@@ -30,13 +30,13 @@ class TodayListState extends State<TodayListView> {
         'Photograhy',
         description: 'Snap Beautiful Pictures'),
     const SpotlightToday(
-        'https://ayo.news/wp-content/uploads/2020/05/Fortnite-1.jpg',
-        'Fortnite',
+        'https://images.unsplash.com/photo-1595325281545-e7d6cdd5f95d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
+        'Twitter',
         AppInfo(
-            'https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/6d/9d/59/6d9d5931-e300-fa8f-df4f-0087932d0989/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/400x400.png',
+            'https://store-images.s-microsoft.com/image/apps.50484.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.2c71c1ea-c28f-4dd1-b72d-c43cdd3476f4?mode=scale&q=90&h=300&w=200',
             'Fortnite',
-            'Exclusive Game',
-            'Mobile Game'
+            'Live news, sports etc',
+            'Social Media'
             ))
   ];
 
