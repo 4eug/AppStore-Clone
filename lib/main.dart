@@ -31,51 +31,52 @@ class MainPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       backgroundColor: ColorStyles.primaryDarkColor,
-      bottomNavigationBar:DecoratedBox(
-        decoration: const BoxDecoration(
-          color: Colors.black),
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(1, 5, 1, 5),
-            child: SafeArea(
-              top: false,
-              // ignore: unnecessary_const
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  IconButton(
-                    icon: const FaIcon(FontAwesomeIcons.fileLines),
-                    color: Colors.white,
-                    iconSize: 30,
-                    onPressed: (){},
-                    ),
-                IconButton(
-                  icon: const FaIcon(FontAwesomeIcons.rocket),
+      bottomNavigationBar:BottomNavigationBar(
+        backgroundColor: Colors.white.withOpacity(0.1),
+          type: BottomNavigationBarType.fixed,
+          items: [
+            BottomNavigationBarItem(
+              icon: FaIcon(
+                FontAwesomeIcons.fileLines,
+                size: 30,
+                color: Colors.white,
+              ),
+              // ignore: deprecated_member_use
+              title: Text('Today', style: TextStyle(color: Colors.white),),
+            ),
+            BottomNavigationBarItem(
+              icon: FaIcon(
+                FontAwesomeIcons.search,
+                size: 25.0,
+                color: Colors.white,
+              ),
+              // ignore: deprecated_member_use
+              title: Text('Today', style: TextStyle(color: Colors.white),),
+            ),
+            BottomNavigationBarItem(
+              icon: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                child: Icon(
+                  Icons.movie_creation_outlined,
+                  size: 30.0,
                   color: Colors.white,
-                  iconSize: 30,
-                  onPressed: () {},
                 ),
-                IconButton(
-                  icon: const FaIcon(FontAwesomeIcons.layerGroup),
-                  color: Colors.white,
-                  iconSize: 30,
-                  onPressed: () {},
-                ),
-                IconButton(
-                  icon: const FaIcon(FontAwesomeIcons.gamepad),
-                  color: Colors.white,
-                  iconSize: 30,
-                  onPressed: () {},
-                ),
-                 IconButton(
-                  icon: const FaIcon(FontAwesomeIcons.magnifyingGlass),
-                  color: Colors.white,
-                  iconSize: 30,
-                  onPressed: () {},
-                ), 
-                ],
-              )),
-          ),
-          ) ,
+              ),
+              // ignore: deprecated_member_use
+              title: Text('Today', style: TextStyle(color: Colors.white),),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.shop, size: 30.0, color: Colors.white),
+              // ignore: deprecated_member_use
+              title: Text('Today', style: TextStyle(color: Colors.white),),
+            ),
+           BottomNavigationBarItem(
+              icon: Icon(Icons.shop, size: 30.0, color: Colors.white),
+              // ignore: deprecated_member_use
+              title: Text('Today', style: TextStyle(color: Colors.white),),
+            ),
+          ],
+        ),
       body: const ViewPage(),
     );
   }
